@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Python Recipes Project",
     github: "https://github.com/MoonData21/PythonRecipesProjectAM",
-    live: "https://anoon14.pythonanywhere.com/",
+    live: "https://www.moonsrecipesite.com/",
     description:
       "Recipe Sharing App with Django and HTML. The main objective of this project is to have users sign up and provide CRUD operations while sharing recipes with friends and family.",
   },
