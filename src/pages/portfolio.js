@@ -16,13 +16,6 @@ export const Head = () => (
 
 const projects = [
   {
-    title: "Batman Project",
-    github: "https://github.com/andrewjmoon/batmanapp2023",
-    live: "https://thebatmanproject.netlify.app",
-    description:
-      "This site uses a local JSON file and Apollo Client to get mock data to the browser. Pagination is being utilized to paginate results of the TvMaze data. MUI 6 styles the project. React 18 was also used.",
-  },
-  {
     title: "Python Recipes Project",
     github: "https://github.com/MoonData21/PythonRecipesProjectAM",
     live: "https://www.moonsrecipesite.com/",
@@ -30,11 +23,39 @@ const projects = [
       "Recipe Sharing App with Django and HTML. The main objective of this project is to have users sign up and provide CRUD operations while sharing recipes with friends and family.",
   },
   {
+    title: "Batman Project",
+    github: "https://github.com/andrewjmoon/batmanapp2023",
+    live: "https://thebatmanproject.netlify.app",
+    description:
+      "This site uses a local JSON file and Apollo Client to get mock data to the browser. Pagination is being utilized to paginate results of the TvMaze data. MUI 6 styles the project. React 18 was also used.",
+  },
+  {
+    title: "Python Weather Watcher App",
+    github: "https://github.com/MoonData21/WeatherWatchers",
+    live: "https://weatherwatcher.streamlit.app/",
+    description:
+      "Weather Watcher is a Python Streamlit app that provides current weather information, a 3-day forecast, interactive radar maps, and AI-style natural language summaries for cities around the world. The app leverages Open-Meteo APIs, RainViewer radar data, and Folium maps to deliver a visually rich, interactive weather experience.",
+  },
+  {
+    title: "Python Earthquake Project App",
+    github: "https://github.com/MoonData21/EarthquakeProject",
+    live: "https://earthquakedashboard.streamlit.app/",
+    description:
+      "This project is a real-time, interactive earthquake dashboard built with Python, Streamlit, and Pydeck, using data from the USGS Earthquake Hazards Program. The dashboard visualizes recent earthquakes worldwide on a 3D map, with the ability to filter by magnitude and timeframe.",
+  },
+  {
+    title: "Python Linguistics Analyzer App",
+    github: "https://github.com/MoonData21/EarthquakeProject",
+    live: "https://linguisticsanalyzer.streamlit.app/",
+    description:
+      "A Streamlit app for exploring word frequency, sentiment, and word patterns in text form. Libraries that are utilized: streamlit, textblob, wordcloud, and matplotlib.",
+  },
+  {
     title: "The HelpOut Project",
     github: "https://github.com/andrewjmoon/thehelpoutproject",
     live: "https://thehelpoutproject.netlify.app/",
     description:
-      "This site was meant to provide a list non-profits and charities for Covid-19 responses and where to donate to the organizations. There is also a list for tips/advice associated with Covid-19. Pagination is being utilized with data files to mimic an API fetch. Material-UI styles the project with an image layout scroll added as well.",
+      "This older project was meant to provide a list non-profits and charities for Covid-19 responses and where to donate to the organizations. There is also a list for tips/advice associated with Covid-19. Pagination is being utilized with data files to mimic an API fetch. Material-UI styles the project with an image layout scroll added as well.",
   },
   {
     title: "Reading List",
