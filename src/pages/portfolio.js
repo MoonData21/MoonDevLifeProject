@@ -16,6 +16,24 @@ export const Head = () => (
 
 const projects = [
   {
+    title: "SalusLife",
+    live: "https://www.saluslife.org/",
+    description:
+      "A wellness-first social platform connecting people based on shared fitness and lifestyle values. Features compatibility matching, identity verification, subscription tiers, and real-time messaging. Built with Next.js, TypeScript, Supabase, Stripe, and Tailwind CSS.",
+  },
+  {
+    title: "SafelyMeet",
+    live: "https://www.safelymeet.org/",
+    description:
+      "A free public safety tool for women to run background checks using federal court records and the national sex offender registry before meeting someone in person. Built with Next.js, TypeScript, Supabase, and Tailwind CSS.",
+  },
+  {
+    title: "PermitIQ",
+    live: "https://cpproject-pink.vercel.app/",
+    description:
+      "A B2B SaaS tool for title companies and real estate professionals to instantly search property permits, liens, and code violations by address and parcel number. Pay-per-search at $25/search. Built with Next.js, TypeScript, Supabase, Stripe, and Tailwind CSS.",
+  },
+  {
     title: "Python Recipes Project",
     github: "https://github.com/MoonData21/PythonRecipesProjectAM",
     live: "https://www.moonsrecipesite.com/",
@@ -93,13 +111,6 @@ const projects = [
       "A reading list application utilizing local storage and React hooks (useReducer, useEffect, useState, and useContext).",
   },
   {
-    title: "Pics and Vids",
-    github: "https://github.com/andrewjmoon/picsandvids2",
-    live: "https://pics-and-vids.netlify.app/",
-    description:
-      "Provides picturesque photos and videos through full-screen galleries, picture carousels, and YouTube embeds. Built with React Hooks and React Router.",
-  },
-  {
     title: "Book Collection App",
     github: "https://github.com/andrewjmoon/amsbookcollection",
     live: "https://amsbookcollectionapp.netlify.app/",
@@ -124,14 +135,16 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <ul key={index} style={{ marginBottom: "2rem", listStyle: "none" }}>
               <li style={{ color: "white" }}>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ marginRight: "1rem" }}
-                >
-                  <img src={logo} alt="GitHub Logo" style={{ width: "24px" }} />
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ marginRight: "1rem" }}
+                  >
+                    <img src={logo} alt="GitHub Logo" style={{ width: "24px" }} />
+                  </a>
+                )}
                 <a
                   href={project.live}
                   target="_blank"
